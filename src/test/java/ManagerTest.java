@@ -75,10 +75,11 @@ public class ManagerTest {
         manager.addMovies("Film 13");
         manager.addMovies("Film 14");
         manager.addMovies("Film 15");
+        manager.addMovies("Film 16");
 
 
         String[] actual = manager.findLast();
-        String[] expected = {"Film 15", "Film 14", "Film 13", "Film 12", "Film 11", "Film 10", "Film 9", "Film 8", "Film 7", "Film 6"};
+        String[] expected = {"Film 15", "Film 15", "Film 14", "Film 13", "Film 12", "Film 11", "Film 10", "Film 9", "Film 8", "Film 7"};
 
         Assertions.assertArrayEquals(expected, actual);
     }
